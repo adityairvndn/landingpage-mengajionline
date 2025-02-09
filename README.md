@@ -10,3 +10,4 @@ How to make Route:
 php artisan install:api
 How to Check Route success add:
 php artisan route:list
+coba push
