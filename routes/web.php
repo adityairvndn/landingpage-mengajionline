@@ -9,6 +9,10 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/landing', function () {
+    return view('landingpage.index');
+});
+
 
 // Route::post('api/{device}/register', [AuthController::class, 'submitRegistrasi'])->name('api.register');
 
