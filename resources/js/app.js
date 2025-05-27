@@ -29,3 +29,46 @@ const swiper = new Swiper(".swiper-container", {
     },
     speed: 3000, // Durasi transisi yang lebih cepat (ms)
 });
+
+
+
+const accordionButtons = document.querySelectorAll('#feature .accordion-button');
+
+accordionButtons.forEach(button => {
+    button.addEventListener('click', function () {
+        accordionButtons.forEach(btn => {
+            btn.classList.remove('active');
+            btn.querySelector('.accordion-content').classList.add('hidden');
+            const icon = btn.querySelector('i');
+            icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+        });
+
+        // Toggle class active untuk yang diklik
+        this.classList.add('active');
+        const content = this.querySelector('.accordion-content');
+        const icon = this.querySelector('i');
+        content.classList.remove('hidden');
+        icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+    });
+});
+
+
+const accordionButtonsFaq = document.querySelectorAll('#faq .accordion-button');
+
+accordionButtonsFaq.forEach(button => {
+    button.addEventListener('click', function () {
+        accordionButtonsFaq.forEach(btn => {
+            btn.classList.remove('active');
+            btn.querySelector('.accordion-content').classList.add('hidden');
+            const icon = btn.querySelector('i');
+            icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+        });
+
+        // Toggle class active untuk yang diklik
+        this.classList.add('active');
+        const content = this.querySelector('.accordion-content');
+        const icon = this.querySelector('i');
+        content.classList.remove('hidden');
+        icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+    });
+});
