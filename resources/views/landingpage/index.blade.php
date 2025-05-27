@@ -2,12 +2,17 @@
 <!doctype html>
 <html lang="id">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Menggunakan direktif Vite untuk memuat file CSS yang sudah dikompilasi -->
-    @vite(["resources/css/app.css", "resources/js/app.js"])
+      <title>Mengajar Ngaji</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Menggunakan direktif Vite untuk memuat file CSS yang sudah dikompilasi -->
+      @vite(["resources/css/app.css", "resources/js/app.js"])
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+      <link rel="preconnect" href="https://fonts.bunny.net">
+      <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
   </head>
   <body class="bg-[#0c0eff] font-display">
@@ -205,44 +210,375 @@
         </div>
     </section>
 
-    <div class="container mx-auto p-4">
-        <!-- Bagian Start Here -->
-        <div class="flex justify-center items-center">
-            <div class="w-90 h-32 p-[14px_8px] bg-[#0C0EFF] flex justify-center items-center">
-                <span class="text-white text-14">Start Here</span>
+    <section class="bg-black">
+        <div class="text-white px-6 py-10 sm:py-14 md:py-20">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-10 md:gap-0">
+                <div class="flex flex-col gap-6 md:gap-4 max-w-md">
+                    <button class="bg-[#0c0eff] text-white text-sm font-semibold rounded-full px-4 py-1 w-max">
+                        Start here
+                    </button>
+                    <h1 class="text-3xl sm:text-4xl font-bold leading-snug">
+                        Mulai perjalanan<br />kamu disini
+                    </h1>
+                </div>
+                <div class="flex gap-10 md:gap-20">
+                    <div class="flex flex-col items-center">
+                        <span class="text-4xl sm:text-5xl font-light">200+</span>
+                        <span class="text-xs sm:text-sm text-gray-300 mt-1">Pengajar tersertifikasi</span>
+                    </div>
+
+                    <div class="border-l border-gray-600 h-auto"></div>
+
+                    <div class="flex flex-col items-center">
+                        <span class="text-4xl sm:text-5xl font-light">4500+</span>
+                        <span class="text-xs sm:text-sm text-gray-300 mt-1">Pengguna aktif setiap bulannya</span>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <!-- Teks Mulai Perjalanan -->
-        <div class="text-center mt-8">
-            <h1 class="text-64">Mulai Perjalanan Anda Disini</h1>
-        </div>
-
-        <!-- Bagian Angka dan Teks -->
-        <div class="flex justify-center items-center mt-12">
-            <div class="text-center">
-                <span class="text-80">200+</span>
-                <p class="text-16 text-[#787878]">Pengalat keventifikasi</p>
+        <div class="bg-gray-50 flex flex-col justify-center py-10 sm:py-16 md:py-20 px-8 rounded-t-[40px] sm:rounded-t-[60px] md:rounded-t-[80px] gap-10">
+            <div class="flex flex-col md:flex-row justify-between gap-6 md:gap-10 mb-6 max-w-7xl mx-auto">
+                <h2 class="text-5xl font-bold text-black flex-1">
+                    Program di Mengaji
+                </h2>
+                <p class="text-md text-gray-600 flex-1 text-left md:text-right ">
+                    Platform belajar mengaji online terbaik yang memberikan kemudahan dan kualitas dalam pembelajaran Al-Qur’an.
+                </p>
             </div>
-            <div class="h-70 w-px bg-gray-300 mx-8"></div>
-            <div class="text-center">
-                <span class="text-80">4500+</span>
-                <p class="text-16 text-[#787878]">Peningama alıf satışı tutarına</p>
+            <div class="flex justify-center ">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-7xl w-full">
+                    <div class=" md:col-span-2 h-68 bg-gray-100 rounded-lg"></div>
+                    <div class="h-68 bg-gray-100 rounded-lg"></div>
+                    <div class="h-68 bg-gray-100 rounded-lg"></div>
+                    <div class="h-68 bg-gray-100 rounded-lg"></div>
+                    <div class="h-68 bg-gray-100 rounded-lg"></div>
+                    <div class=" md:col-span-2 h-68 bg-gray-100 rounded-lg"></div>
+                </div>
             </div>
         </div>
+    </section>
+    <div class="border-b-6 border-[#0c0eff]">
+    </div>
+    <div class="bg-white">
+        <section class="flex justify-center bg-white py-10 sm:py-16 md:py-20 px-8 ">
+            <div class="grid grid-cols-1 md:grid-cols-8 gap-5 max-w-7xl w-full">
+                <div class="md:col-span-2">
+                    Aplikasi belajar mengaji online untuk membantu memahami dan membaca Al-Qur'an dengan lebih baik.
+                </div>
+                <div class="md:col-span-6">
+                    <h2 class="font-bold text-4xl md:text-5xl md:font-normal leading-tight mb-10 ml-auto text-left md:w-max">
+                        Bagaimana Cara Menggunakan  Mengaji?
+                        </h2>
+                </div>
+                <div class="md:col-span-4">
+                    <div id="feature" class=" select-none">
+                        <div >
+                            <button type="button" id="accordion-item-1" class="w-full flex flex-col px-5 py-5 text-black text-base font-normal accordion-button active">
+                                <span class="flex items-center justify-between space-x-2">
+                                    <span class="text-2xl font-normal leading-none gap-5 flex items-center space-x-2">
+                                        <span>01</span>
+                                        <span>Daftar Gratis</span>
+                                    </span>
+                                    <i class="fas fa-chevron-up"></i>
+                                </span>
+                                <span class="mt-2 text-sm font-normal leading-tight text-left accordion-content">
+                                    Temukan ustaz atau ustazah sesuai preferensi Anda
+                                </span>
+                            </button>
+                        </div>
+                        <div >
+                            <button type="button" id="accordion-item-2" class="w-full flex flex-col px-5 py-5 text-black text-base font-normal accordion-button">
+                                <span class="flex items-center justify-between space-x-2">
+                                    <span class="text-2xl font-normal leading-none gap-5 flex items-center space-x-2">
+                                        <span>02</span>
+                                        <span>Pilih Guru</span>
+                                    </span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                                <span class="mt-2 text-sm font-normal leading-tight text-left hidden accordion-content">
+                                    Temukan ustaz atau ustazah sesuai preferensi Anda
+                                </span>
+                            </button>
+                        </div>
+                        <div >
+                            <button type="button" id="accordion-item-3" class="w-full flex flex-col px-5 py-5 text-black text-base font-normal accordion-button">
+                                <span class="flex items-center justify-between space-x-2">
+                                    <span class="text-2xl font-normal leading-none gap-5 flex items-center space-x-2">
+                                        <span>03</span>
+                                        <span>Pilih Kelas</span>
+                                    </span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                                <span class="mt-2 text-sm font-normal leading-tight text-left hidden accordion-content">
+                                    Temukan ustaz atau ustazah sesuai preferensi Anda
+                                </span>
+                            </button>
+                        </div>
+                        <div >
+                            <button type="button" id="accordion-item-4" class="w-full flex flex-col px-5 py-5 text-black text-base font-normal accordion-button">
+                                <span class="flex items-center justify-between space-x-2">
+                                    <span class="text-2xl font-normal leading-none gap-5 flex items-center space-x-2">
+                                        <span>04</span>
+                                        <span>Mulai Belajar</span>
+                                    </span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                                <span class="mt-2 text-sm font-normal leading-tight text-left hidden accordion-content">
+                                    Temukan ustaz atau ustazah sesuai preferensi Anda
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Teks Peringatan -->
-        <div class="text-center mt-8">
-            <p class="text-16 text-[#787878]">Düzdenen bulunan manavutlardan kullanılmasın.</p>
+                <div class="md:col-span-4">
+                    <div class="h-full bg-gray-100 rounded-lg"></div>
+                </div>
+            </div>
+        </section>
+        <section class="flex flex-col gap-4 px-4 py-12 sm:py-16 bg-[#E9EFFB] rounded-t-[40px] sm:rounded-t-[60px] md:rounded-t-[80px] ">
+            <div class="flex justify-center mb-4 ">
+             <span class="bg-[#0c0eff] text-white text-md font-medium rounded-full px-3 py-1 leading-none select-none">
+              Testimoni
+             </span>
+            </div>
+            <h2 class="text-center text-black text-5xl font-normal leading-[60px] mb-10">
+                Apa Kata Mereka?
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-7xl mx-auto">
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <div class="flex items-center mb-3">
+                        <img alt="Portrait of Ahmad Rahman, a young man with short hair and a light shirt" class="w-10 h-10 rounded-full object-cover mr-3" height="40" src="https://storage.googleapis.com/a1aa/image/45d5beb9-9bcd-49c9-5186-9bc1699a0362.jpg" width="40"/>
+                        <div>
+                            <p class="text-[14px] font-semibold text-black leading-tight">
+                                Ahmad Rahman
+                            </p>
+                            <p class="text-[12px] font-normal text-[#6B7280] leading-tight">
+                                Mahasiswa
+                            </p>
+                        </div>
+                    </div>
+                    <p class="text-[14px] font-normal text-black leading-relaxed">
+                        "NgajiKuy membantu saya memperbaiki bacaan Al-Qur'an dengan fleksibilitas waktu yang pas untuk jadwal kuliah saya."
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <div class="flex items-center mb-3">
+                        <img alt="Portrait of Siti Aisyah, a woman with long hair wearing a light top" class="w-10 h-10 rounded-full object-cover mr-3" height="40" src="https://storage.googleapis.com/a1aa/image/4051ad42-d755-4202-d840-f5175eef329e.jpg" width="40"/>
+                        <div>
+                            <p class="text-[14px] font-semibold text-black leading-tight">
+                                Siti Aisyah
+                            </p>
+                            <p class="text-[12px] font-normal text-[#6B7280] leading-tight">
+                                Ibu Rumah Tangga
+                            </p>
+                        </div>
+                    </div>
+                    <p class="text-[14px] font-normal text-black leading-relaxed">
+                        "Dengan NgajiKuy, saya bisa belajar bersama anak-anak tanpa harus keluar rumah. Sangat praktis dan menyenangkan!"
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <div class="flex items-center mb-3">
+                        <img alt="Portrait of Dimas Pratama, a man with short hair wearing a dark shirt" class="w-10 h-10 rounded-full object-cover mr-3" height="40" src="https://storage.googleapis.com/a1aa/image/cff05bc7-742a-4f32-c5d0-818eeb505980.jpg" width="40"/>
+                        <div>
+                            <p class="text-[14px] font-semibold text-black leading-tight">
+                                Dimas Pratama
+                            </p>
+                            <p class="text-[12px] font-normal text-[#6B7280] leading-tight">
+                                Pegawai Swasta
+                            </p>
+                        </div>
+                    </div>
+                    <p class="text-[14px] font-normal text-black leading-relaxed">
+                        "Pilihan guru di NgajiKuy sangat beragam, saya bisa memilih yang cocok dengan gaya belajar saya”
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="flex flex-col gap-4 px-4 py-12 sm:py-16 bg-white ">
+        <div class="flex flex-col justify-center gap-4">
+            <h2 class="text-center text-black font-bold text-5xl  leading-[60px]">
+                Frequently Asked Question
+            </h2>
+            <p class="text-center text-md font-normal mb-10 max-w-2xl mx-auto text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum laudantium reprehenderit, obcaecati ratione facere nesciunt tempore. Aliquid minus incidunt sint placeat! Obcaecati ea quasi enim, quos possimus ipsa? Enim, nam!
+            </p>
+        </div><div class="w-full flex justify-center">
+            <div id="faq" class=" max-w-7xl w-full">
+                <div >
+                    <button type="button" id="accordion-item-1" class="w-full flex flex-col px-5 py-5 text-black text-base font-normal accordion-button active">
+                        <span class="flex items-center justify-between space-x-2">
+                            <span class="text-2xl font-normal leading-none gap-5 flex items-center space-x-2">
+                                <span>Apakah bisa belajar di luar jadwal?</span>
+                            </span>
+                            <i class="fas fa-chevron-up"></i>
+                        </span>
+                        <span class="mt-2 text-sm font-normal leading-tight text-left accordion-content">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore dignissimos eaque, quaerat ullam temporibus quibusdam quia nisi nam doloremque impedit ex nemo sed? Distinctio dicta ipsam veniam provident repellendus recusandae!
+                        </span>
+                    </button>
+                </div>
+                <div >
+                    <button type="button" id="accordion-item-2" class="w-full flex flex-col px-5 py-5 text-black text-base font-normal accordion-button">
+                        <span class="flex items-center justify-between space-x-2">
+                            <span class="text-2xl font-normal leading-none gap-5 flex items-center space-x-2">
+
+                                <span>Siapa yang bisa menggunakan aplikasi ini?</span>
+                            </span>
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                        <span class="mt-2 text-sm font-normal leading-tight text-left hidden accordion-content">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam iusto veniam labore necessitatibus, soluta deserunt nostrum accusantium ipsum porro ullam laudantium placeat vero esse voluptatibus at! Laudantium, sit? Maiores, numquam?
+                        </span>
+                    </button>
+                </div>
+                <div >
+                    <button type="button" id="accordion-item-3" class="w-full flex flex-col px-5 py-5 text-black text-base font-normal accordion-button">
+                        <span class="flex items-center justify-between space-x-2">
+                            <span class="text-2xl font-normal leading-none gap-5 flex items-center space-x-2">
+                                <span>Apakah ada uji coba gratis?</span>
+                            </span>
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                        <span class="mt-2 text-sm font-normal leading-tight text-left hidden accordion-content">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. In pariatur magnam aliquid culpa corporis nesciunt id ipsa, unde nemo nam, facilis saepe ipsam quidem blanditiis reiciendis eligendi vitae, officia libero.
+                        </span>
+                    </button>
+                </div>
+                <div >
+                    <button type="button" id="accordion-item-4" class="w-full flex flex-col px-5 py-5 text-black text-base font-normal accordion-button">
+                        <span class="flex items-center justify-between space-x-2">
+                            <span class="text-2xl font-normal leading-none gap-5 flex items-center space-x-2">
+                                <span>Bagaimana cara memilih guru?</span>
+                            </span>
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                        <span class="mt-2 text-sm font-normal leading-tight text-left hidden accordion-content">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro ut ab doloribus, ad eaque ipsa modi itaque labore sit accusantium quidem voluptates recusandae atque dolores distinctio officiis? Ipsam, unde aliquam.
+                        </span>
+                    </button>
+                </div><div >
+                    <button type="button" id="accordion-item-4" class="w-full flex flex-col px-5 py-5 text-black text-base font-normal accordion-button">
+                        <span class="flex items-center justify-between space-x-2">
+                            <span class="text-2xl font-normal leading-none gap-5 flex items-center space-x-2">
+                                <span>Bagaimana cara memilih guru?</span>
+                            </span>
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                        <span class="mt-2 text-sm font-normal leading-tight text-left hidden accordion-content">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro ut ab doloribus, ad eaque ipsa modi itaque labore sit accusantium quidem voluptates recusandae atque dolores distinctio officiis? Ipsam, unde aliquam.
+                        </span>
+                    </button>
+                </div><div >
+                    <button type="button" id="accordion-item-4" class="w-full flex flex-col px-5 py-5 text-black text-base font-normal accordion-button">
+                        <span class="flex items-center justify-between space-x-2">
+                            <span class="text-2xl font-normal leading-none gap-5 flex items-center space-x-2">
+                                <span>Bagaimana cara memilih guru?</span>
+                            </span>
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                        <span class="mt-2 text-sm font-normal leading-tight text-left hidden accordion-content">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro ut ab doloribus, ad eaque ipsa modi itaque labore sit accusantium quidem voluptates recusandae atque dolores distinctio officiis? Ipsam, unde aliquam.
+                        </span>
+                    </button>
+                </div><div >
+                    <button type="button" id="accordion-item-4" class="w-full flex flex-col px-5 py-5 text-black text-base font-normal accordion-button">
+                        <span class="flex items-center justify-between space-x-2">
+                            <span class="text-2xl font-normal leading-none gap-5 flex items-center space-x-2">
+                                <span>Bagaimana cara memilih guru?</span>
+                            </span>
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                        <span class="mt-2 text-sm font-normal leading-tight text-left hidden accordion-content">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro ut ab doloribus, ad eaque ipsa modi itaque labore sit accusantium quidem voluptates recusandae atque dolores distinctio officiis? Ipsam, unde aliquam.
+                        </span>
+                    </button>
+                </div><div >
+                    <button type="button" id="accordion-item-4" class="w-full flex flex-col px-5 py-5 text-black text-base font-normal accordion-button">
+                        <span class="flex items-center justify-between space-x-2">
+                            <span class="text-2xl font-normal leading-none gap-5 flex items-center space-x-2">
+                                <span>Bagaimana cara memilih guru?</span>
+                            </span>
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                        <span class="mt-2 text-sm font-normal leading-tight text-left hidden accordion-content">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro ut ab doloribus, ad eaque ipsa modi itaque labore sit accusantium quidem voluptates recusandae atque dolores distinctio officiis? Ipsam, unde aliquam.
+                        </span>
+                    </button>
+                </div><div >
+                    <button type="button" id="accordion-item-4" class="w-full flex flex-col px-5 py-5 text-black text-base font-normal accordion-button">
+                        <span class="flex items-center justify-between space-x-2">
+                            <span class="text-2xl font-normal leading-none gap-5 flex items-center space-x-2">
+                                <span>Bagaimana cara memilih guru?</span>
+                            </span>
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                        <span class="mt-2 text-sm font-normal leading-tight text-left hidden accordion-content">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro ut ab doloribus, ad eaque ipsa modi itaque labore sit accusantium quidem voluptates recusandae atque dolores distinctio officiis? Ipsam, unde aliquam.
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Bagian Footer -->
+    <div class="bg-black">
+        <footer class="max-w-7xl mx-auto px-6 py-12 flex flex-col sm:flex-row sm:justify-between sm:items-start gap-12 sm:gap-0">
+            <div class="flex flex-col space-y-6 sm:w-1/4">
+                <div class="flex items-center space-x-2">
+                    <div class="w-5 h-5 rounded-md bg-white"></div>
+                    <span class="font-semibold text-white text-base leading-5">Mengaji</span>
+                </div>
+                <div class="flex space-x-6 text-gray-400 text-lg">
+                    <a href="#" aria-label="LinkedIn" class="hover:text-white transition-colors duration-200">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter" class="hover:text-white transition-colors duration-200">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" aria-label="Facebook" class="hover:text-white transition-colors duration-200">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:w-1/5 space-y-2">
+                <h3 class="text-white font-semibold text-sm leading-5 mb-3">Links</h3>
+                <a href="#" class="text-gray-400 text-sm leading-5 hover:text-white transition-colors duration-200">Home</a>
+                <a href="#" class="text-gray-400 text-sm leading-5 hover:text-white transition-colors duration-200">Features</a>
+                <a href="#" class="text-gray-400 text-sm leading-5 hover:text-white transition-colors duration-200">Testimonials</a>
+                <a href="#" class="text-gray-400 text-sm leading-5 hover:text-white transition-colors duration-200">Pricing</a>
+            </div>
+
+            <div class="flex flex-col sm:w-1/5 space-y-2">
+                <h3 class="text-white font-semibold text-sm leading-5 mb-3">Help and Support</h3>
+                <a href="#" class="text-gray-400 text-sm leading-5 hover:text-white transition-colors duration-200">FAQ</a>
+                <a href="#" class="text-gray-400 text-sm leading-5 hover:text-white transition-colors duration-200">Contact Us</a>
+                <a href="#" class="text-gray-400 text-sm leading-5 hover:text-white transition-colors duration-200">Support</a>
+            </div>
+
+            <div class="flex flex-col sm:w-1/4 space-y-2">
+                <h3 class="text-white font-semibold text-sm leading-5 mb-3">Our Address</h3>
+                <p class="text-gray-400 text-sm leading-5">
+                    Gayungan, Surabaya 60231<br />
+                    Indonesia
+                </p>
+            </div>
+        </footer>
+
+        <div class="max-w-7xl mx-auto px-6 pb-8 flex flex-col sm:flex-row justify-between text-gray-400 text-xs leading-4">
+            <div class="mb-4 sm:mb-0 flex items-center space-x-1">
+                <i class="far fa-copyright text-xs"></i>
+                <span>2025 Mengaji. All right reserved</span>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-white transition-colors duration-200">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors duration-200">Terms Of Use</a>
+            </div>
         </div>
     </div>
-
-    <!-- Bagian Footer -->
-    <footer class="bg-blue-600 text-white py-6">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2025 Perusahaan Kami. Semua Hak Dilindungi.</p>
-        </div>
-    </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
